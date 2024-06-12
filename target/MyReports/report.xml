@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="7" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="123.153">
+    <testcase classname="Unknown" name="Login with valid credentials" time="8.959">
+        <failure message="javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression [contains(text(),'Edit your account information'))] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '[contains(text(),'Edit your account information'))]' is not a valid XPath expression.&quot;}&#10;  (Session info: chrome=125.0.6422.142)&#10;Build info: version: '4.21.0', revision: '79ed462ef4'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [05b94e5b0dc4987de90a398cdfa2cb57, findElement {value=[contains(text(),'Edit your account information'))], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91955\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62529/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 05b94e5b0dc4987de90a398cdfa2cb57" type="org.openqa.selenium.JavascriptException"><![CDATA[Given User navigates to login page..........................................passed
+When User enters valid email address "himesh12@gmail.com" into email field..passed
+And User enters valid password "Himesh@123" into password field.............passed
+And User clicks on Login button.............................................passed
+Then User should get successfully Logged in.................................failed
+
+StackTrace:
+org.openqa.selenium.JavascriptException: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression [contains(text(),'Edit your account information'))] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '[contains(text(),'Edit your account information'))]' is not a valid XPath expression."}
+  (Session info: chrome=125.0.6422.142)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05b94e5b0dc4987de90a398cdfa2cb57, findElement {value=[contains(text(),'Edit your account information'))], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91955\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62529/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 05b94e5b0dc4987de90a398cdfa2cb57
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+	at Pages.AccountPage.displayStatusEditYourInformationoption(AccountPage.java:32)
+	at StepDefination.Login.user_should_get_successfully_logged_in(Login.java:72)
+	at ✽.User should get successfully Logged in(file:///D:/Cucumber_new_latestUpatedSeries_2023/CucumberHybridFrameworkArunMotri/CucumberBDDFrameworkArunMotri/src/test/Features/Login.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="Unknown" name="Login with invalid credentials" time="7.15">
+        <system-out><![CDATA[Given User navigates to login page..........................................passed
+When User enters invalid email address into email field.....................passed
+And User enters invalid password "1234567890" into password field...........passed
+And User clicks on Login button.............................................passed
+Then User should get a proper warning message about credentials mismatch....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="Login with invalid email and valid password" time="6.924">
+        <system-out><![CDATA[Given User navigates to login page..........................................passed
+When User enters invalid email address into email field.....................passed
+And User enters valid password "12345" into password field..................passed
+And User clicks on Login button.............................................passed
+Then User should get a proper warning message about credentials mismatch....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="Login with valid email and invalid password" time="6.121">
+        <system-out><![CDATA[Given User navigates to login page..........................................passed
+When User enters valid email address "amotooricap9@gmail.com" into email field.passed
+And User enters invalid password "1234567890" into password field...........passed
+And User clicks on Login button.............................................passed
+Then User should get a proper warning message about credentials mismatch....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Unknown" name="Login without providing any credentails" time="6.063">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given User navigates to login page..........................................passed
+When User dont enter email address into email field.........................passed
+And User dont enter password into password field............................passed
+And User clicks on Login button.............................................passed
+Then User should get a proper warning message about credentials mismatch....failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at StepDefination.Login.user_should_get_a_proper_warning_message_about_credentials_mismatch(Login.java:99)
+	at ✽.User should get a proper warning message about credentials mismatch(file:///D:/Cucumber_new_latestUpatedSeries_2023/CucumberHybridFrameworkArunMotri/CucumberBDDFrameworkArunMotri/src/test/Features/Login.feature:41)
+]]></failure>
+    </testcase>
+    <testcase classname="Registration functionality" name="User creates an account only with mandatory fields" time="7.957">
+        <failure message="Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given User navigates to Register Account page...............................passed
+When User enters the details into below fields..............................passed
+And User selects Privacy Policy.............................................passed
+And User clicks on Continue button..........................................passed
+Then User account should get created successfully...........................failed
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.getText(Unknown Source)
+	at Pages.AccountSuccessPage.getPageHeading(AccountSuccessPage.java:33)
+	at StepDefination.Register.user_account_should_get_created_successfully(Register.java:95)
+	at ✽.User account should get created successfully(file:///D:/Cucumber_new_latestUpatedSeries_2023/CucumberHybridFrameworkArunMotri/CucumberBDDFrameworkArunMotri/src/test/Features/Register.feature:13)
+]]></failure>
+    </testcase>
+    <testcase classname="Registration functionality" name="User creates an account with all fields" time="10.169">
+        <failure message="Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given User navigates to Register Account page...............................passed
+When User enters the details into below fields..............................passed
+And User selects Yes for Newsletter.........................................passed
+And User selects Privacy Policy.............................................passed
+And User clicks on Continue button..........................................passed
+Then User account should get created successfully...........................failed
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.getText(Unknown Source)
+	at Pages.AccountSuccessPage.getPageHeading(AccountSuccessPage.java:33)
+	at StepDefination.Register.user_account_should_get_created_successfully(Register.java:95)
+	at ✽.User account should get created successfully(file:///D:/Cucumber_new_latestUpatedSeries_2023/CucumberHybridFrameworkArunMotri/CucumberBDDFrameworkArunMotri/src/test/Features/Register.feature:26)
+]]></failure>
+    </testcase>
+    <testcase classname="Registration functionality" name="User creates a duplicate account" time="21.79">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),'Warning: E-Mail Address is already registered!')]&quot;}&#10;  (Session info: chrome=125.0.6422.142)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.21.0', revision: '79ed462ef4'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4d9fa5a34a53c3e213d3e3a59320f56d, findElement {value=//div[contains(text(),'Warning: E-Mail Address is already registered!')], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91955\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62697}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62697/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4d9fa5a34a53c3e213d3e3a59320f56d" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User navigates to Register Account page...............................passed
+When User enters the details into below fields with duplicate email.........passed
+And User selects Yes for Newsletter.........................................passed
+And User selects Privacy Policy.............................................passed
+And User clicks on Continue button..........................................passed
+Then User should get a proper warning about duplicate email.................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Warning: E-Mail Address is already registered!')]"}
+  (Session info: chrome=125.0.6422.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d9fa5a34a53c3e213d3e3a59320f56d, findElement {value=//div[contains(text(),'Warning: E-Mail Address is already registered!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91955\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62697}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62697/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d9fa5a34a53c3e213d3e3a59320f56d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.getText(Unknown Source)
+	at Pages.RegisterPage.getWarningMessageText(RegisterPage.java:157)
+	at StepDefination.Register.user_should_get_a_proper_warning_about_duplicate_email(Register.java:125)
+	at ✽.User should get a proper warning about duplicate email(file:///D:/Cucumber_new_latestUpatedSeries_2023/CucumberHybridFrameworkArunMotri/CucumberBDDFrameworkArunMotri/src/test/Features/Register.feature:39)
+]]></failure>
+    </testcase>
+    <testcase classname="Registration functionality" name="User creates an account without filling any details" time="17.035">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),'Warning: E-Mail Address is already registered!')]&quot;}&#10;  (Session info: chrome=125.0.6422.142)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.21.0', revision: '79ed462ef4'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [73494cacc4861b20844822059f3e8da4, findElement {value=//div[contains(text(),'Warning: E-Mail Address is already registered!')], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91955\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62732/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 73494cacc4861b20844822059f3e8da4" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User navigates to Register Account page...............................passed
+When User dont enter any details into fields................................passed
+And User clicks on Continue button..........................................passed
+Then User should get proper warning messages for every mandatory field......failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Warning: E-Mail Address is already registered!')]"}
+  (Session info: chrome=125.0.6422.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73494cacc4861b20844822059f3e8da4, findElement {value=//div[contains(text(),'Warning: E-Mail Address is already registered!')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91955\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62732/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73494cacc4861b20844822059f3e8da4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.getText(Unknown Source)
+	at Pages.RegisterPage.getWarningMessageText(RegisterPage.java:157)
+	at StepDefination.Register.user_should_get_proper_warning_messages_for_every_mandatory_field1(Register.java:149)
+	at ✽.User should get proper warning messages for every mandatory field(file:///D:/Cucumber_new_latestUpatedSeries_2023/CucumberHybridFrameworkArunMotri/CucumberBDDFrameworkArunMotri/src/test/Features/Register.feature:45)
+]]></failure>
+    </testcase>
+    <testcase classname="Search functionality" name="User searches for a valid product" time="16.998">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;HP LP3065&quot;}&#10;  (Session info: chrome=125.0.6422.142)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.21.0', revision: '79ed462ef4'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f2ee46fc1c6a10d0597f343f3e72909d, findElement {value=HP LP3065, using=link text}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91955\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62763}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62763/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f2ee46fc1c6a10d0597f343f3e72909d" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User opens the Application............................................passed
+When User enters valid product "HP" into Search box field...................passed
+And User clicks on Search button............................................passed
+Then User should get valid product displayed in search results..............failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"HP LP3065"}
+  (Session info: chrome=125.0.6422.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2ee46fc1c6a10d0597f343f3e72909d, findElement {value=HP LP3065, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91955\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62763}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62763/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2ee46fc1c6a10d0597f343f3e72909d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+	at Pages.SearchResultPage.displaystatusoftheValidProduct(SearchResultPage.java:39)
+	at StepDefination.Search.user_should_get_valid_product_displayed_in_search_results(Search.java:54)
+	at ✽.User should get valid product displayed in search results(file:///D:/Cucumber_new_latestUpatedSeries_2023/CucumberHybridFrameworkArunMotri/CucumberBDDFrameworkArunMotri/src/test/Features/Search.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="Search functionality" name="User searches for an invalid product" time="5.164">
+        <system-out><![CDATA[Given User opens the Application............................................passed
+When User enters invalid product "Honda" into Search box field..............passed
+And User clicks on Search button............................................passed
+Then User should get a message about no product matching....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search functionality" name="User searches without any product" time="8.014">
+        <system-out><![CDATA[Given User opens the Application............................................passed
+When User dont enter any product name into Search box field.................passed
+And User clicks on Search button............................................passed
+Then User should get a message about no product matching....................passed
+]]></system-out>
+    </testcase>
+</testsuite>

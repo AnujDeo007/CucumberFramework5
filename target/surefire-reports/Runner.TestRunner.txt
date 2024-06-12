@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: Runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 5, Errors: 5, Skipped: 0, Time elapsed: 277.32 s <<< FAILURE! - in Runner.TestRunner
+Login with valid credentials #1(EMPTY_NAME)  Time elapsed: 12.49 s  <<< FAILURE!
+java.lang.AssertionError
+
+Login with valid credentials #2(EMPTY_NAME)  Time elapsed: 8.002 s  <<< FAILURE!
+java.lang.AssertionError
+
+Login with valid credentials #3(EMPTY_NAME)  Time elapsed: 9.835 s  <<< FAILURE!
+java.lang.AssertionError
+
+Login with valid email and invalid password(EMPTY_NAME)  Time elapsed: 9.749 s  <<< FAILURE!
+java.lang.AssertionError
+
+Login without providing any credentails(EMPTY_NAME)  Time elapsed: 7.974 s  <<< FAILURE!
+java.lang.AssertionError
+
+User creates an account only with mandatory fields(Registration functionality)  Time elapsed: 41.652 s  <<< ERROR!
+java.lang.NullPointerException
+
+User creates an account with all fields(Registration functionality)  Time elapsed: 43.535 s  <<< ERROR!
+java.lang.NullPointerException
+
+User creates a duplicate account(Registration functionality)  Time elapsed: 46.926 s  <<< ERROR!
+java.lang.NullPointerException
+
+User creates an account without filling any details(Registration functionality)  Time elapsed: 41.768 s  <<< ERROR!
+java.lang.NullPointerException
+
+User searches for a valid product(Search functionality)  Time elapsed: 7.211 s  <<< ERROR!
+java.lang.NullPointerException
+
